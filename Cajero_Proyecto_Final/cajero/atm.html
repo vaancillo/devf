@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>ATM - Cajero Automático</title>
+        <style type="text/css">
+            body
+            {
+                background-color: #484848;
+                color: blanchedalmond;
+                font-family: Segoe UI;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>
+            Clark's ATM
+        </h2>
+        <p>
+            <p id="availableMoney"></p>
+            <img src="cajero.gif" />
+        </p>
+        <p>
+            Ingresa el Monto y luego da click en Extraer para retirar tu dinero: <br/>
+            <input type="number" min="1" max="8000" value="1" step="1" id="numberDinero" /> <input type="button" value="Extraer" id="buttonExtraer"/>
+            <input type="button" value="Limpiar" id="buttonClear"/>
+        </p>
+        <p id="resultado"> </p>
+        <canvas width="2000" height="285" id="billetes"> </canvas><hr/>
+        <p id="reporte">Reporte:<br/></p>
+        <script type="text/javascript" src="billeteClass.js"></script>
+        <script type="text/javascript" src="cajero.js"></script>
+    </body>
+</html>
